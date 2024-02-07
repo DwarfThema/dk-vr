@@ -25,7 +25,7 @@ export default function Collections({
             <div key={index} className="w-[300px]">
               <Image src={item.imageUrl} width={300} height={500} alt="img" />
               <div className="flex justify-between mt-1">
-                <span>{item.author}</span>
+                <span>{item.author}</span>x
                 <button className="flex items-center justify-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

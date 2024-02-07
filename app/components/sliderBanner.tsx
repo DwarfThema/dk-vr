@@ -53,7 +53,7 @@ export default function SliderBanner({
             x: { type: "spring", stiffness: 300, damping: 30 },
             opacity: { duration: 0.2 },
           }}
-          className={`mx-6 bg-[url('/${sliderItem[page].imgUrl}')] bg-cover bg-center rounded-xl h-full flex flex-col justify-center text-white`}
+          className={`mx-6 bg-[url('/bannerImgA.png')] bg-cover bg-center rounded-xl h-full flex flex-col justify-center text-white`}
         >
           <div className="p-10 z-10">
             <h2 className="text-2xl font-bold  mb-2">
