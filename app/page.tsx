@@ -101,7 +101,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col">
-      <header className="h-[64px] fixed flex justify-between items-center px-7 z-20 bg-white">
+      <header className="h-[64px] fixed w-full flex justify-between items-center px-7 z-20 bg-white">
         <div className="flex">
           <button className="flex justify-center items-center">
             <div className="bg-stone-800 w-[32px] h-[32px] rounded-full text-white items-center justify-center p-1">
