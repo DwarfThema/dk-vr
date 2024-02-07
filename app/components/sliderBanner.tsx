@@ -56,7 +56,7 @@ export default function SliderBanner({
           className={`mx-6 bg-[url('/bannerImgA.png')] bg-cover bg-center rounded-xl h-full flex flex-col justify-center text-white`}
         >
           <div className="p-10 z-10">
-            <h2 className="text-2xl font-bold  mb-2">
+            <h2 className="text-2xl font-bold mb-2">
               {sliderItem[page].title}
             </h2>
             <p className="">{sliderItem[page].description}</p>
@@ -86,7 +86,7 @@ export default function SliderBanner({
               <span>View collection</span>
             </button>
           </div>
-          <div className="absolute w-full h-full bg-gradient-to-r from-black/75 via-20% via-black/0 to-black/0 rounded-xl " />
+          <div className="absolute w-[30%] h-full bg-gradient-to-r from-black/85 to-black/0 rounded-xl" />
         </motion.div>
         <div className="absolute bottom-0 top-0 left-0 right-0 p-1 flex justify-between items-center px-2">
           <button
