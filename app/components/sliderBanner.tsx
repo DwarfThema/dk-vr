@@ -41,8 +41,8 @@ export default function SliderBanner({
   }, [page]);
 
   return (
-    <div className="relative flex flex-col items-center justify-center h-[500px] mt-[64px]">
-      <div className="h-full w-full overflow-hidden my-3 px-1">
+    <div className="relative flex flex-col items-center justify-center h-[500px] mt-[64px] my-3">
+      <div className="h-full w-full overflow-hidden px-1">
         <motion.div
           key={page}
           variants={variants}
@@ -53,10 +53,9 @@ export default function SliderBanner({
             x: { type: "spring", stiffness: 300, damping: 30 },
             opacity: { duration: 0.2 },
           }}
-          className={`p-10 mx-6 bg-[url('/bannerImgC.png')] bg-cover bg-center rounded-xl h-full flex flex-col justify-center text-white`}
+          className={`mx-6 bg-[url('/${sliderItem[page].imgUrl}')] bg-cover bg-center rounded-xl h-full flex flex-col justify-center text-white`}
         >
-          <div>
-            {/* Dynamic content based on the slide */}
+          <div className="p-10 z-10">
             <h2 className="text-2xl font-bold  mb-2">
               {sliderItem[page].title}
             </h2>
@@ -87,6 +86,7 @@ export default function SliderBanner({
               <span>View collection</span>
             </button>
           </div>
+          <div className="absolute w-full h-full bg-gradient-to-r from-black/75 via-20% via-black/0 to-black/0 rounded-xl " />
         </motion.div>
         <div className="absolute bottom-0 top-0 left-0 right-0 p-1 flex justify-between items-center px-2">
           <button

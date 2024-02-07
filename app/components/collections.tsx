@@ -17,7 +17,7 @@ export default function Collections({
     <div className="w-full px-7 my-4">
       <div className="flex item-center">
         <span className="text-2xl font-semibold mr-5">{title}</span>
-        <button>see more &nbsp;&nbsp; {`>`}</button>
+        <button>See more &nbsp; {`>`}</button>
       </div>
       <div className="mt-3 grid grid-cols-5 gap-4 w-full text-[14px]">
         {items.map((item: IItems, index) => {
